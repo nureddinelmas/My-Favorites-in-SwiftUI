@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            
+      
+        List {
+            
+            ForEach(myFavorites) { favorite in
+                Section(header: Text(favorite.title)){
+                    ForEach (favorite.elements){ element in
+                        NavigationLink(destination:DetailsView(chosenFavoriteElement: element)) {
+                            Text(element.name)
+                        }
+//                            Image(element.imageName).resizable().aspectRatio(contentMode: .fit)
+//                                .frame(width: UIScreen.main.bounds.width * 0.5 , height: UIScreen.main.bounds.height * 0.09)
+                    }
+                }
+            }
+        }.navigationBarTitle(Text("Favorite Book"))
+        }
+        
     }
 }
 
