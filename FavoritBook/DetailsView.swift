@@ -11,11 +11,12 @@ struct DetailsView: View {
    @State var chosenFavoriteElement : FavoriteElements
     
     var body: some View {
+        
         VStack{
        
         Image(chosenFavoriteElement.imageName).resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: UIScreen.main.bounds.width * 1.9, height: UIScreen.main.bounds.height * 0.1, alignment: Alignment.center)
+                .frame(width: UIScreen.main.bounds.width * 0.95, height: UIScreen.main.bounds.height * 0.3)
             
             Text(chosenFavoriteElement.name).font(.largeTitle).padding()
             

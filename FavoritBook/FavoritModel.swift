@@ -30,8 +30,8 @@ let mjolby = FavoriteElements(name: "Mjölby", imageName: "mjölby", description
 let stockholm = FavoriteElements(name: "Stockholm", imageName: "stockholm", description: "bu sehir iyi")
 let malmo = FavoriteElements(name: "Malmö", imageName: "malmö", description: "bu sehir iyi")
 let goteborg = FavoriteElements(name: "Göteborg", imageName: "göteborg", description: "bu sehir iyi")
-
-let favoriteCities = FavoriteModel(title: "Cities", elements: [mjolby, stockholm, malmo, goteborg])
+let kalmar = FavoriteElements(name: "Kalmar", imageName: "göteborg", description: "Burasi Kalmar")
+let favoriteCities = FavoriteModel(title: "Cities", elements: [mjolby, stockholm, malmo, goteborg, kalmar])
 
 
 // Books
